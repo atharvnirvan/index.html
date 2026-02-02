@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Manisha 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(180deg,#fff0f6,#ffe4ef);
+  text-align:center;
+  color:#444;
+  animation:bgBeat 2s infinite;
+}
+@keyframes bgBeat{50%{transform:scale(1.01)}}
+section{padding:80px 20px}
+h1,h2{color:#ff4f9a}
+.hidden{display:none}
+
+/* Handwritten */
+.handwritten{
+  font-family:'Pacifico',cursive;
+  font-size:42px;
+  overflow:hidden;
+  white-space:nowrap;
+  border-right:3px solid #ff4f9a;
+  width:0;
+  margin:20px auto;
+  animation:write 4s steps(30,end) forwards,blink .8s infinite;
+}
+@keyframes write{to{width:100%}}
+@keyframes blink{50%{border-color:transparent}}
+
+/* Buttons */
+.buttons{display:flex;justify-content:center;gap:20px;margin-top:30px}
+button{
+  border:none;border-radius:50px;
+  padding:16px 36px;font-size:18px;
+  cursor:pointer;transition:.5s
+}
+#yesBtn{background:linear-gradient(135deg,#ff5fa2,#ff2d75);color:#fff}
+#noBtn{background:#ddd}
+#yesBtn.fullscreen{
+  position:fixed;inset:0;
+  width:100vw;height:100vh;
+  font-size:48px;border-radius:0;z-index:9999
+}
+
+/* Cards */
+.card{
+  background:#fff;padding:30px;border-radius:25px;
+  max-width:760px;margin:25px auto;
+  box-shadow:0 20px 40px rgba(0,0,0,.1);
+  animation:heartbeat 1.6s infinite
+}
+@keyframes heartbeat{25%{transform:scale(1.05)}}
+
+/* Grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;max-width:900px;margin:auto
+}
+
+/* Memories */
+.memories{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;max-width:1000px;margin:auto
+}
+.memories img{
+  width:100%;
+  border-radius:20px;
+  box-shadow:0 15px 35px rgba(0,0,0,.2)
+}
+
+/* Promise */
+.promise{
+  background:#fff;padding:18px;border-radius:18px;
+  max-width:400px;margin:10px auto;
+  box-shadow:0 10px 20px rgba(0,0,0,.1)
+}
+
+/* Unlock animation */
+.unlock-animate{
+  animation:pop 0.6s ease;
+}
+@keyframes pop{
+  0%{transform:scale(0.5);opacity:0}
+  100%{transform:scale(1);opacity:1}
+}
+</style>
+</head>
+
+<body>
+
+<section id="intro">
+  <h1>Heyyyyy ❤️</h1>
+  <div class="handwritten">Manisha Arora</div>
+  <h2>Will you be my Valentine my cutuuu arora 🥹🥹</h2>
+  <div class="buttons">
+    <button id="yesBtn">YES 💖</button>
+    <button id="noBtn">No 😢</button>
+  </div>
+</section>
+
+<section id="accepted" class="hidden">
+  <h2>Good choice babu 😌🎉</h2>
+  <div class="card">
+    You unlocked unlimited hugs, kisses & cuddles 🐻💞  
+    <br><b>(redeemable very soon, I promise)</b><br><br>
+    🐻❤️ Bear hugs forever  
+    <br>🙈💕 Shy love with hearts
+  </div>
+</section>
+
+<section>
+<h2>Things I Love About You 🥹</h2>
+<div class="grid">
+  <div class="card">You are my kuchupuchuuuuu 😭🥰✨</div>
+  <div class="card">Swarg se utri hui apsara 😭😭😭</div>
+  <div class="card">Your lips 😭✨✨</div>
+  <div class="card">Your voice & smile</div>
+</div>
+<div class="card"><b>EVERYTHINGGGGG IN YOUUUU 💖😭✨</b></div>
+</section>
+
+<section>
+<h2>A Little Secret 🤫</h2>
+<div class="card">
+Loving you feels effortless.  
+In your chaos and calm, I find home.  
+Distance never scared me — losing you would.  
+Forever feels natural with you.
+</div>
+</section>
+
+<section>
+<h2>Why You, Always You 💗</h2>
+<div class="card">
+I didn’t fall slowly. I fell all at once.  
+In the way you talk, the way you care,  
+the way you exist.  
+<br><br>It was always you.  
+It will always be you.
+</div>
+</section>
+
+<section>
+<h2>From Then to Forever ⏳</h2>
+<div class="card">💬 First chat</div>
+<div class="card">😂 First laugh</div>
+<div class="card">😤 First fight</div>
+<div class="card">🥺 First “I miss you”</div>
+<div class="card">❤️ Valentine’s Day with you</div>
+</section>
+
+<section>
+<h2>What Being Yours Means To Me 🥰</h2>
+<div class="card">✔ Feeling safe</div>
+<div class="card">✔ Feeling chosen</div>
+<div class="card">✔ Feeling understood</div>
+<div class="card">✔ Feeling home</div>
+</section>
+
+<section>
+<h2>Send You a Hug 🐻</h2>
+<button onclick="alert('Hug delivered successfully 🐻💞')">Send Hug</button>
+</section>
+
+<section>
+<h2>Only You Can Unlock This 🔒</h2>
+<p><i>Hint: it’s your nickname 💕</i></p>
+<input id="pass"
+ type="text"
+ placeholder="Enter password"
+ autocapitalize="none"
+ autocomplete="off"
+ autocorrect="off"
+ spellcheck="false">
+<button onclick="unlockSecret()">Unlock</button>
+
+<div id="secret" class="card hidden">
+kisiko batana mat bht secret hai yeh  
+I secretly love youuu very veryyyyyy muchhhhh  
+and haaan 🥰 i want to kisss everyyyy inch of youuuuu 😭😭😭😭✨❤️  
+I want to make our every imagination to come true 😭😭
+</div>
+</section>
+
+<section>
+<h2>If I Were With You Right Now 🌙</h2>
+<div class="card">
+I’d hold your hand a little tighter,  
+look at you a little longer,<br>
+I will kiss youuu<br>
+I will cuddleee with you<br>
+we will do various levels 🥰<br><br>
+and remind you —  
+this is not temporary.  
+This is us.
+</div>
+</section>
+
+<section>
+<h2>My Promises To You 🤍</h2>
+<div class="promise">I promise to listen</div>
+<div class="promise">I promise to fight for us</div>
+<div class="promise">I promise to choose you</div>
+<div class="promise">I promise to grow with you</div>
+</section>
+
+<section>
+<h2>Our Beautiful Memories Together 📸</h2>
+<div class="memories">
+<img src="memory1.jpg">
+<img src="memory2.jpg">
+<img src="memory3.jpg">
+<img src="memory4.jpg">
+<img src="memory5.jpg">
+</div>
+</section>
+
+<section>
+<h1>I LOVE YOUUU ❤️❤️❤️</h1>
+<div class="card">
+Every heartbeat, every future, every version of me  
+chooses you. Always.
+</div>
+</section>
+
+<script>
+let forced=false;
+document.getElementById("noBtn").onclick=()=>{
+  document.getElementById("yesBtn").classList.add("fullscreen");
+  forced=true;
+};
+document.getElementById("yesBtn").onclick=()=>{
+  if(forced){
+    document.getElementById("yesBtn").classList.remove("fullscreen");
+    forced=false;
+  }
+  document.getElementById("intro").classList.add("hidden");
+  document.getElementById("accepted").classList.remove("hidden");
+};
+
+function unlockSecret(){
+  let input=document.getElementById("pass");
+  let value=input.value.toLowerCase().trim().replace(/\s+/g," ");
+
+  input.blur(); // 🔥 hides keyboard
+
+  if(value==="savage arora"){
+    let secret=document.getElementById("secret");
+    secret.classList.remove("hidden");
+    secret.classList.add("unlock-animate");
+  }else{
+    alert("Hint: it’s your nickname 💕");
+  }
+}
+</script>
+
+</body>
+</html>
